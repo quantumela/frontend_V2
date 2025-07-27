@@ -2,10 +2,11 @@ import os, sys
 import streamlit as st
 import base64
 from streamlit_option_menu import option_menu
-from foundation_module.foundation_app import render as render_foundation
-from payroll import app as payroll_app
-from employee_app import render_employee_tool
-from employeedata.app.data_migration_tool import render_employee_v2
+from Foundation_Data.foundation_app import render as render_foundation
+from Payroll_Data import app as payroll_app
+from Employee_Data.employee_app import render_employee_tool
+from Employee_DataV2.app.data_migration_tool import render as render_employee_v2
+
 # Hide Streamlit style (footer and hamburger menu)
 # 🔒 Hide Streamlit footer, menu, and header for a cleaner look
 st.markdown("""
